@@ -1,0 +1,161 @@
+<!-- explains the type of document(DOCTYPE); HTML5 in this case. -->
+<!-- head has links to css & js files, metadata, description, keywords etc. -->
+<!-- Ctrl + Alt + B - beautify HTML -->
+<!-- Ctrl + Shift + P - opens command palette to search -->
+<!-- Ctrl + Shift + H - preview HTML page -->
+<!-- h1:6 - heading tags with different sizes -->
+<!-- Inline elements do not start on a new line - <span>, <img>, <a> etc. -->
+<!-- Block elements start on a new line - <div>, <h1>, <p>, <form> etc. -->
+<!-- Tag attributes are placed within the start tag and are key-value pairs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML Cheat Sheet</title>
+</head>
+
+<body>
+  <a href="blog.html">Go to blog</a>
+  <hr>
+
+  <!-- Headings -->
+  <h1>Heading One</h1>
+  <h2>Heading Two</h2>
+  <h3>Heading Three</h3>
+  <h4>Heading Four</h4>
+  <h5>Heading Five</h5>
+  <h6>Heading Six</h6>
+
+  <!-- Paragraphs -->
+  <p>If you can keep your head when all about you<br>
+    <strong>Are losing theirs and blaming it on you,</strong><br>
+    <em>If you can trust yourself when all men doubt you,</em><br>
+    But make allowance for their doubting too;<br>
+    If you can wait and not be tired by waiting,<br>
+    Or being lied about, don’t deal in lies,<br>
+    Or being hated, don’t give way to hating,<br>
+    And yet don’t look too good, nor talk too wise:<br>
+  </p>
+
+  <p>If you can dream—and not make dreams your master;<br>
+    If you can think—and not make thoughts your aim;<br>
+    <a href="https://www.poetryfoundation.org/poems/46473/if---" target="_blank">If you can meet with Triumph and Disaster</a><br>
+    And treat those two impostors just the same;<br>
+    If you can bear to hear the truth you’ve spoken <br>
+    Twisted by knaves to make a trap for fools, <br>
+    Or watch the things you gave your life to, broken,<br>
+    And stoop and build ’em up with worn-out tools: <br>
+  </p>
+
+  <!-- Lists -->
+  <ul>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+  </ul>
+
+  <ol>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+  </ol>
+
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Poem</th>
+        <th>Poet</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>If</td>
+        <td>Rudyard Kipling</td>
+        <td>1943</td>
+      </tr>
+      <tr>
+        <td>Phenomenal Woman</td>
+        <td>Maya Angelou</td>
+        <td>1978</td>
+      </tr>
+      <tr>
+        <td>Lift Every Voice and Sing</td>
+        <td>James Weldon Johnson</td>
+        <td>2000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- Forms -->
+  <form action="process.php" method="post">
+    <div>
+      <label>Poem</label>
+      <input type="text" name="poemName" placeholder="Enter the Poem">
+    </div>
+    <br>
+    <div>
+      <label>Poet</label>
+      <input type="text" name="poetName" placeholder="Enter the Poet">
+    </div>
+    <br>
+    <div>
+      <label>Year</label>
+      <input type="number" name="year" min="1920" max="2019" placeholder="Enter the year published">
+    </div>
+    <br>
+    <div>
+      <label>Notes</label>
+      <textarea name="notes" rows="8" cols="80"></textarea>
+    </div>
+    <br>
+    <div>
+      <label>Rating</label>
+      <select name="rating">
+        <option value="*">Sucks!</option>
+        <option value="**">So!So!</option>
+        <option value="***">Fckin A!</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label>Updated on:</label>
+      <input type="date" name="day">
+    </div>
+    <br>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+
+  <!-- Button -->
+  <br>
+  <button>Click</button>
+  <br>
+  <hr>
+
+  <!-- Images -->
+  <a href="images/mandarin.jpg">
+    <img src="images/mandarin.jpg" alt="Images are missing" width="400">
+  </a>
+
+  <br>
+  <hr>
+  <!-- Quotations -->
+  <blockquote cite="https://www.poetryfoundation.org/poems/48985/phenomenal-woman">
+    Cause I’m a woman <br>
+    Phenomenally.<br>
+    Phenomenal woman,<br>
+    That’s me.<br>
+  </blockquote>
+
+  <p><abbr title="The United Nations Educational, Scientific and Cultural Organization">UNESCO</abbr> is working for peace</p>
+
+  <p>Designed using <a href="https://www.youtube.com/watch?v=UB1O30fR-EE">this tutorial</a></p>
+
+</body>
+
+</html>
